@@ -1,6 +1,6 @@
 package sem_1;
 
-public class Father extends People implements FatherI {
+public class Father extends People implements FatherI{
 
     public Father(Integer id, String name, String gender, Integer age, String social_status) {
         super(id, name, gender, age, social_status);

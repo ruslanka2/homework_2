@@ -2,7 +2,7 @@ package sem_1;
 
 import java.util.ArrayList;
 
-public class operation implements methodI {
+public class operation implements methodI  {
     
 ArrayList <String> ne = new ArrayList<>();
 String n;
