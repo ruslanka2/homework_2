@@ -3,13 +3,14 @@ package sem_1;
 public class Children extends People implements FatherI, MatherI{
     
     
-    public Children(Integer id, String name, String gender, Integer age, String social_status, String fathermather_id) {
-        
+  //TODO Auto-generated constructor stub
+    
+    
+    public Children(Integer id, String name, String gender, String age, String social_status, String fathermather_id) {
         super(id, name, gender, age, social_status);
-        this.fathermather_id = fathermather_id;
-        
-        //TODO Auto-generated constructor stub
+       
     }
+
     private  String fathermather_id;
     
     
@@ -60,3 +61,4 @@ public class Children extends People implements FatherI, MatherI{
         System.out.println("fatman");
     }
 }
+

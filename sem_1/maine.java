@@ -1,7 +1,7 @@
 package sem_1;
 import java.util.List;
 import java.util.ArrayList;
-import java.util.Scanner;
+
 
 public class maine {
   void testPeople(List<People> li, Peoplechecks sc ){
@@ -16,10 +16,10 @@ public class maine {
  
     
     public static void main (String[] args) {
-       People father = new Father(1, "Ivan", "men",46, "worker");
-       Mather  mather = new Mather(2, "Nadya", "women", 44, "worker");
-       Children son = new Children(3, "Taras", "men", 20, "student", "yes");
-       Children daughter = new Children(4, "Nastya","women",22,"student","da");
+       Father father = new Father(1, "Ivan", "men","Пенсионер", "worker");
+       Mather  mather = new Mather(2, "Nadya", "women", 44.5, "worker");
+       Children son = new Children(3, "Taras", "men", "Совершеннолетний", "student", "yes");
+       Children daughter = new Children(4, "Nastya","women","Совершеннолетняя","student","da");
        relatives sister = new relatives(7, "Lida", "women", 39, "worker", "sister", "father");
        relatives bro = new relatives(8, "Alex", "men", 47, "worker", "brat", "mother");
        List<People> lis = new ArrayList<>();
@@ -36,23 +36,23 @@ public class maine {
         System.out.println(y.getName());
        }
        
-      lis.sort((o1,o2) -> Integer.compare(o1.getAge(), o2.getAge()));
+      
       
       for (var x:lis){
          System.out.println(x);
       
 
        }
-       
+      //  lis.sort((o1,o2) -> Integer.compare(o1.getAge(), o2.getAge()));
      
-       maine info = new maine();
-       info.testPeople (lis, new Peoplechecks() {
-        @Override
-        public boolean check(People p){
-          return p.getAge()>30;
-        }
-       });
-       info.testPeople (lis, (People p) -> {return p.age<30;});
+      //  maine info = new maine();
+      //  info.testPeople (lis, new Peoplechecks() {
+      //   @Override
+      //   public boolean check(People p){
+      //     return p.getAge()>30;
+      //   }
+      //  });
+      // info.testPeople (lis, (People p) -> {return p.age<30;});
        
 
       // info.testPeople(lis, new Peoplechecks() {
@@ -114,6 +114,11 @@ public class maine {
     
     
     }
+
+
+
+
+    
    }
 
 

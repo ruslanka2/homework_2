@@ -1,15 +1,15 @@
 package sem_1;
 
-public   class  People implements Comparable<People>  {
+public   class  People<E>  {
     
     private Integer id;
     private String name;
     private String gender;
-    private int age;
+    private E age;
     private String social_status;
 
  
-    public  People(Integer id, String name, String gender, Integer age, String social_status){
+    public  People(Integer id, String name, String gender, E age, String social_status){
         this.id=id;
         this.name=name;
         this.gender = gender;
@@ -17,6 +17,17 @@ public   class  People implements Comparable<People>  {
         this.social_status = social_status;
     }
     
+
+
+
+
+
+
+
+
+
+
+
     public Integer getId(){
         return id;
     }
@@ -26,7 +37,7 @@ public   class  People implements Comparable<People>  {
     public String getGender(){
         return gender;
     }
-    public Integer getAge(){
+    public E getAge(){
         return age;
     }
     public String getSocial_status(){
@@ -42,7 +53,7 @@ public   class  People implements Comparable<People>  {
     public void setGender(String gender){
         this.gender = gender; 
     }
-    public void setAge(Integer age){
+    public void setAge(E age){
         this.age = age;
     }
     public void setSocial_status(String social_status){
@@ -70,15 +81,16 @@ public   class  People implements Comparable<People>  {
         
     }
 
-    @Override
-    public int compareTo(People o) {
-        if (this.age > o.age)
-        return 1;
-    else if (this.age < o.age)
-        return -1;
-    else
-        return 0;
-    }
+    // @Override
+    // public int compareTo(People o) {
+    //     if (this.age > o.age)
+    //     return 1;
+    // else if (this.age < o.age)
+    //     return -1;
+    // else
+    //     return 0;
+    // }
+
 }
 // return "book{"+
 //                 "brand=" + brand +

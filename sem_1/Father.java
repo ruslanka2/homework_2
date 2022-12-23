@@ -2,11 +2,28 @@ package sem_1;
 
 public class Father extends People implements FatherI{
 
-    public Father(Integer id, String name, String gender, Integer age, String social_status) {
+    public Father(Integer id, String name, String gender, String age, String social_status) {
         super(id, name, gender, age, social_status);
-        //TODO Auto-generated constructor stub
+        
         
     }
+
+
+
+
+    
+
+
+
+
+    
+
+
+
+
+
+
+
 
 
     @Override
